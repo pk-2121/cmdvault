@@ -13,6 +13,7 @@ jobs:
       matrix:
         target:
           - x86_64-unknown-linux-musl       # Linux (musl)
+          - aarch64-unknown-linux-musl      # ARM Linux (musl)
 
     env:
       BINARY_NAME: commr
@@ -56,4 +57,3 @@ jobs:
             *.zip
         env:
           GITHUB_TOKEN: ${{ secrets.COMMR }}
-
